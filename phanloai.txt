@@ -6,7 +6,14 @@
 3 nhóm
   1.Nhóm khởi tạo: cung cấp giải pháp tạo ra object và che giấu đc logic của việc tạo ra nó.
   Giúp chương trình mềm dẻo hơn trong việc quyết định object nào được tạo ra trong những tình huống đc đưa ra
+    Singleton: đối tượng cần tồn tại duy nhất và có thể truy xuất mọi nơi ( biến toàn cục: nhưng phá vỡ quy tắc oop)
+    Factory Method: Quản lí và trả về đối tượng theo yêu cầu, giúp việc khởi tạo đối tượng linh hoạt hơn
+    Abstract Factory: Phương pháp tạo ra super Factory để tạo Factory khác.
+    Builder: khi object có nhiều thuộc tính ( constructor có nhiều param => tạo nhiều constructor???)
+    Prototye: khởi tạo đối tượng bằng cách clone đối tượng đã tồn tại thay vì tạo new
+    Object Pool: singletion => 1 instance, nhưng nhiều trường hợp tạo nhiều đối tượng => gây lãng phí => 
+                sử dụng prototype(ko phải lúc nào object cũng có thể clone đầy đủ)=> sử dụng object pool
 
-    Factory Method:
   2.Nhóm cấu trúc: liên quan tới class và các thành phần của object. dùng để thiết lập và định nghĩa mối quan hệ giữa các đối tượng
+
   3.Nhóm tương tác: hành vi của đối tượng, sự giao tiếp giữa các object với nhau

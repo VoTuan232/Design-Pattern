@@ -1,0 +1,27 @@
+Builder: khi object có nhiều thuộc tính ( constructor có nhiều param => tạo nhiều constructor???)
+  giải quyết nhược điểm của Factory và Abstract Factory khi object có nhiều thuộc tính
+  Một số tham số là tùy chọn nhưng trong Factory bắt buộc phải gửi ( với tham số ko thiết lập sẽ có giá trị null)
+  ==> nhiều param việc tạo sẽ phức tạp
+
+Thành phần:
+  Product: đối tượng cần tạo có nhiều thuộc tính
+  Builder: Abstract class hoặc interface khai báo phương thức tạo đối tượng
+  ConcreteBuilder: kế thừa builder và cài đặt chi tiết
+  Director/Client: nới gọi builder
+
+Lợi ích:
+  giảm bớt constructor
+  dễ đọc, dễ bảo trì
+
+Nhược điểm:
+  Code duplicate do copy thuộc tính Product sang Builder
+  Code phức tạp do tạo nhiều class
+
+Khi nào sử dụng:
+  Khi một đối tượng phức tạp có nhiều thuộc tính required và nhiều thuộc tính optional(ko bắt buộc)
+  Khi có quá nhiều constructor
+  Muốn kiểm soát quá trình xây dựng
+
+So sánh với Factory Pattern: 
+  Factory Pattern cũng có thể được sử dụng để xây dựng một đối tượng phức tạp, vậy sự khác biệt của nó với mô hình Builder Pattern là gì?
+  Sự khác biệt lớn duy nhất giữa Builder Pattern và Factory Pattern cung cấp cho bạn nhiều quyền kiểm soát hơn đối với quá trình tạo đối tượng

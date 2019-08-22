@@ -1,0 +1,16 @@
+Prototye: khởi tạo đối tượng bằng cách clone đối tượng đã tồn tại thay vì tạo new
+  Dùng khi tạo một object tốn nhiều chi phí trong khi gần giống với object đã tồn tại
+
+Lợi ích:
+  performance:
+  giảm độ phức tạp việc tạo đối tượng
+  giảm việc phân lớp, tránh tạo nhiều lớp con (abstract factory)
+  tạo object mới bằng cách thay đổi một vài thuộc tính của object có sẵn
+  tạo object bằng cách thay đổi cấu trúc
+
+Sử dụng khi nào:
+  Chi phí tạo đối tượng( bằng toán tử new) lớn
+  Ẩn độ phức tạp việc tạo đối tượng phía client
+  khởi tạo lúc run-time: 
+  cấu hình ứng dụng dynamic class
+  truyền đối tượng sao chép vào hàm để xử lí 

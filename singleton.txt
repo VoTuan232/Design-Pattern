@@ -1,0 +1,18 @@
+Singleton:
+  đối tượng cần tồn tại duy nhất và có thể truy xuất mọi nơi ( biến toàn cục: nhưng phá vỡ quy tắc oop)
+
+Sử dụng:
+  Đảm bảo rằng chỉ có 1 instance của lớp
+  Việc quản lí truy cập tốt hơn vì chỉ có một thể hiện duy nhất
+  Có thể quản lí giới hạn instance của lớp trong giới hạn nhất định
+
+Quy tắc implement: 
+  1.private construct: giới hạn truy cập từ class bên ngoài
+  2.private static final variable: đảm bảo biến chỉ đc khởi tạo trong class
+  3.Có một method public static để return instance được khởi tạo ở trên
+
+Các cách implement:
+
+Sử dụng Singleton khi nào:
+  Giải quyết bài toán: Shared resource, Logger, Configuration, Caching, Thread pool,...
+  Một số design pattern khác cũng sử dụng: Abstract Factory, Builder, Prototype, Facade,...

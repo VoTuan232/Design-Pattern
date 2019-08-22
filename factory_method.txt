@@ -1,0 +1,21 @@
+Factory Method: Quản lí và trả về đối tượng theo yêu cầu, giúp việc khởi tạo đối tượng linh hoạt hơn
+  Sản xuất đối tượng
+  Không để lộ logic bên người dùng và tham chiếu đến đối tượng bằng cách dùng 1 interface chung
+  Sử dụng khi có một class cha và nhiều class con, dựa trên đầu vào và trả về 1 trong những class con đó.
+
+Cài đặt:
+  Thành phần 1 Factory Method:
+    1.Super class: có thể là 1 interface, 1 abstract class, class thông thường
+    2.Sub class: implement phương thức của super class theo nghiệp vụ riêng của nó
+    3.Factory class: khởi tạo đối tượng sub class dựa theo tham số đầu vào: lớp này là Singleton hoặc 1 public static
+        Sử dụng if-else hoặc switch-case để xác định class con đầu ra
+
+Sử dụng khi nào:
+  Khi có 1 lớp cha và nhiều lớp con ( quy trách nhiệm khởi tạo 1 lớp từ client sang lớp Factory)
+  Khi muốn mở rộng hệ thống: hãy tạo sub class và implement tới Factory
+
+Lợi ích: 
+  giúp giảm phụ thuộc giữa các module, hướng tiếp cận tới interface thay vì các implement\
+  Mở rộng code dễ dàng
+  Khởi tạo object che dấu xử lí logic(bên trong factory class)
+  Dễ dàng quản lí life cycle của object

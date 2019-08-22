@@ -1,0 +1,13 @@
+Abstract Factory: Phương pháp tạo ra super Factory để tạo Factory khác ( pattern cao cấp hơn Factory )
+  Một interface có nhiệm vụ tạo ra Factory  
+
+Cài đặt:
+  AbstractFactory:  interface hoặc abstract class chứa phương thức để tạo ra các đối tượng abstract
+  ConcreteFactory: xây dựng, cài đặt các phương thức tạo đối tượng
+  AbstractProduct: interface hoặc abstract để định nghĩa đối tượng abstract
+  Product: cài đặt đối tượng cụ thể, phương thức trong AbstractProduct
+  Client: đối tượng sử dụng AbstractFactory và các AbstractProduct
+
+Ví dụ: 
+  Công ty sản xuất ghế => ghế nhựa và ghế gỗ
+  Muốn mở rộng sản xuất bàn: vẫn giữ nguyên chất liệu nhựa và gỗ 

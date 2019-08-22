@@ -1,0 +1,6 @@
+Object Pool:
+  singletion => 1 instance, nhưng nhiều trường hợp tạo nhiều đối tượng => gây lãng phí => 
+                sử dụng prototype(nhưng ko phải lúc nào object cũng có thể clone đầy đủ)=> sử dụng object pool
+  cung cấp một kỹ thuật để tái sử dụng object thay vì khởi tạo không kiểm soát
+  Ý tưởng: quản lí tập hợp object tái sủ dụng => Khi client muốn dùng => request object pool
+    nếu tất cả object pool được sử dụng => client phải chờ khi object được trả về pool
