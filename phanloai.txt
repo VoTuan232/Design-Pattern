@@ -1,0 +1,12 @@
+4 tác giả(Gang of For): Erich Gamma, Richard Helm, Ralph Johnson và John Vlissides
+
+  Lập trình interface chứ ko phải implement interface đó
+  Ưu tiên object composition hơn là kế thừa
+
+3 nhóm
+  1.Nhóm khởi tạo: cung cấp giải pháp tạo ra object và che giấu đc logic của việc tạo ra nó.
+  Giúp chương trình mềm dẻo hơn trong việc quyết định object nào được tạo ra trong những tình huống đc đưa ra
+
+    Factory Method:
+  2.Nhóm cấu trúc: liên quan tới class và các thành phần của object. dùng để thiết lập và định nghĩa mối quan hệ giữa các đối tượng
+  3.Nhóm tương tác: hành vi của đối tượng, sự giao tiếp giữa các object với nhau
